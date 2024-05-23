@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogForest.Entitylayer", "BlogForest.Entitylayer\BlogForest.Entitylayer.csproj", "{F6B3438A-DFF4-47C5-A05F-C939EC5F2B63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogForest.Entitylayer", "BlogForest.Entitylayer\BlogForest.Entitylayer.csproj", "{F6B3438A-DFF4-47C5-A05F-C939EC5F2B63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogForest.DataAccesslayer", "BlogForest.DataAccesslayer\BlogForest.DataAccesslayer.csproj", "{5A11C08F-C827-4D55-98A9-732442493933}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogForest.DataAccesslayer", "BlogForest.DataAccesslayer\BlogForest.DataAccesslayer.csproj", "{5A11C08F-C827-4D55-98A9-732442493933}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogForest.Businesslayer", "BlogForest.Businesslayer\BlogForest.Businesslayer.csproj", "{5D5299D1-9E34-478F-991C-F86B47050EE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogForest.Businesslayer", "BlogForest.Businesslayer\BlogForest.Businesslayer.csproj", "{5D5299D1-9E34-478F-991C-F86B47050EE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogForest.WebUI", "BlogForest.WebUI\BlogForest.WebUI.csproj", "{37537861-F41C-4037-889A-23286990FA5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogForest.WebUI", "BlogForest.WebUI\BlogForest.WebUI.csproj", "{37537861-F41C-4037-889A-23286990FA5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogForest.Dtolayer", "BlogForest.Dtolayer\BlogForest.Dtolayer.csproj", "{9BDC2C2C-62CC-4DCE-92C3-F0B05F764414}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{37537861-F41C-4037-889A-23286990FA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37537861-F41C-4037-889A-23286990FA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37537861-F41C-4037-889A-23286990FA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BDC2C2C-62CC-4DCE-92C3-F0B05F764414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDC2C2C-62CC-4DCE-92C3-F0B05F764414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDC2C2C-62CC-4DCE-92C3-F0B05F764414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDC2C2C-62CC-4DCE-92C3-F0B05F764414}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

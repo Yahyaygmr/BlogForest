@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlogForest.Businesslayer\BlogForest.Businesslayer.csproj" />
+    <ProjectReference Include="..\BlogForest.Dtolayer\BlogForest.Dtolayer.csproj" />
   </ItemGroup>
 
 </Project>

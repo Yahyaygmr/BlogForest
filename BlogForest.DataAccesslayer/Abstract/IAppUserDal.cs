@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 
 namespace BlogForest.DataAccesslayer.Abstract
 {
-    public interface IBlogDal : IGenericDal<Blog>
+    public interface IAppUserDal : IGenericDal<AppUser>
     {
-        List<Blog> GetBlogsWithCategoryAndUser();
-        Blog GetBlogWithCategoryAndUserById(int id);
     }
 }

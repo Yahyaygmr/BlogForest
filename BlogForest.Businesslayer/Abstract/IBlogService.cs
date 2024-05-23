@@ -9,5 +9,7 @@ namespace BlogForest.Businesslayer.Abstract
 {
     public interface IBlogService : IGenericService<Blog>
     {
+        List<Blog> GetBlogsWithCategoryAndUser();
+        Blog GetBlogWithCategoryAndUserById(int id);
     }
 }

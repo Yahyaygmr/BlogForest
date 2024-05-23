@@ -1,0 +1,33 @@
+﻿@model Blog
+<div class="blog-title-area">
+    <span class="color-green"><a href="garden-category.html" title="">@Model.Category.CategoryName</a></span>
+
+    <h3>@Model.Title</h3>
+
+    <div class="blog-meta big-meta">
+        <small><a href="garden-single.html" title="">@Model.CreatedDate</a></small>
+        <small><a href="blog-author.html" title="">by @Model.AppUser.Name @Model.AppUser.Surname</a></small>
+        <small><a href="#" title=""><i class="fa fa-eye"></i> @Model.ViewCount</a></small>
+    </div><!-- end meta -->
+
+    <div class="post-sharing">
+        <ul class="list-inline">
+            <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i> <span class="down-mobile">Share on Facebook</span></a></li>
+            <li><a href="#" class="tw-button btn btn-primary"><i class="fa fa-twitter"></i> <span class="down-mobile">Tweet on Twitter</span></a></li>
+            <li><a href="#" class="gp-button btn btn-primary"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+    </div><!-- end post-sharing -->
+</div><!-- end title -->
+
+<div class="single-post-media">
+    <img src="@Model.CoverImageUrl" alt="" class="img-fluid">
+</div><!-- end media -->
+
+<div class="blog-content">
+    <div class="pp">
+        <p>@Model.Description</p>
+
+    </div><!-- end pp -->
+
+
+</div><!-- end content -->

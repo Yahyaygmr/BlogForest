@@ -14,7 +14,7 @@ namespace BlogForest.WebUI.ViewComponents.DefaultViewComponents
 
         public IViewComponentResult Invoke()
         {
-            var values = _blogService.GetListAll();
+            var values = _blogService.GetBlogsWithCategoryAndUser();
             return View(values);
         }
     }
