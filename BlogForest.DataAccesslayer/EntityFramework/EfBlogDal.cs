@@ -22,19 +22,30 @@ namespace BlogForest.DataAccesslayer.EntityFramework
         public List<Blog> GetBlogsWithCategoryAndUser()
         {
             return _context.Blogs
-                .Include(x=>x.Category)
-                .Include(x=>x.AppUser)
+                .Include(x => x.Category)
+                .Include(x => x.AppUser)
                 .ToList();
         }
 
-        public Blog GetBlogWithCategoryAndUserById(int id)
+        public Blog? GetBlogWithCategoryAndUserById(int id)
         {
             return _context.Blogs
                 .Where(x => x.BlogId == id)
                .Include(x => x.Category)
                .Include(x => x.AppUser)
                .FirstOrDefault();
-               
+
+        }
+
+        public List<Blog> GetLast2BlogByAppUser(int id)
+        {
+            var values = _context.Blogs
+                .Where(x => x.AppUserId == id)
+                .OrderByDescending(x => x.BlogId)
+                .Take(2)
+                .Include (x => x.Category)
+                .ToList();
+            return values;
         }
     }
 }

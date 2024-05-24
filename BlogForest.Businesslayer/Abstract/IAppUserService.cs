@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace BlogForest.Businesslayer.Abstract
 {
-    public interface IBlogService : IGenericService<Blog>
+    public interface IAppUserService : IGenericService<AppUser>
     {
-        List<Blog> GetBlogsWithCategoryAndUser();
-        Blog GetBlogWithCategoryAndUserById(int id);
-        List<Blog> GetLast2BlogByAppUser(int id);
+        AppUser GetAppUserInformationByBlogId(int id);
     }
 }

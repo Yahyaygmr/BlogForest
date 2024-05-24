@@ -38,6 +38,11 @@ namespace BlogForest.Businesslayer.Concrete
             return _blogDal.GetById(id);
         }
 
+        public List<Blog> GetLast2BlogByAppUser(int id)
+        {
+            return _blogDal.GetLast2BlogByAppUser(id);
+        }
+
         public List<Blog> GetListAll()
         {
             return _blogDal.GetListAll();

@@ -1,0 +1,17 @@
+﻿@model BlogForest.Dtolayer.LoginDtos.CreateLoginDto
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <form method="post">
+        <label>Adınız</label>
+        <input type="text" class="form-control" asp-for="UserName"/>
+        <br />
+        <label>Şifreniz</label>
+        <input type="text" class="form-control" asp-for="Password"/>
+        <br />
+        <button class="btn btn-primary">Giriş Yap</button>
+    </form>
+</div>
+

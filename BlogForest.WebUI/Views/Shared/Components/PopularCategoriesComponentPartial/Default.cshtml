@@ -1,0 +1,13 @@
+﻿@model List<BlogForest.Dtolayer.CategoryDtos.ResultCategoryWithBlogCountDto>
+<div class="widget">
+    <h2 class="widget-title">Popular Categories</h2>
+    <div class="link-widget">
+        <ul>
+            @foreach(var item in Model)
+            {
+                <li><a href="#">@item.Name <span>(@item.BlogCount)</span></a></li>
+            }
+           
+        </ul>
+    </div><!-- end link-widget -->
+</div>

@@ -6,11 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlogForest.DataAccesslayer.Abstract
+namespace BlogForest.Businesslayer.Abstract
 {
-    public interface ICategoryDal : IGenericDal<Category>
+    public interface ICategoryService : IGenericService<Category>
     {
         List<ResultCategoryWithBlogCountDto> GetCategoryWithBlogCount();
     }
-    
 }

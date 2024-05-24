@@ -14,6 +14,12 @@ builder.Services.AddIdentity<AppUser,AppRole>()
 builder.Services.AddScoped<IBlogService,BlogManager>();
 builder.Services.AddScoped<IBlogDal,EfBlogDal>();
 
+builder.Services.AddScoped<IAppUserService, AppUserManager>();
+builder.Services.AddScoped<IAppUserDal, EfAppUserDal>();
+
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -31,7 +37,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

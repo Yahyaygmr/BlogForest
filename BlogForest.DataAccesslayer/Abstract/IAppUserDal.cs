@@ -9,5 +9,6 @@ namespace BlogForest.DataAccesslayer.Abstract
 {
     public interface IAppUserDal : IGenericDal<AppUser>
     {
+        AppUser GetAppUserInformationByBlogId(int id);
     }
 }
