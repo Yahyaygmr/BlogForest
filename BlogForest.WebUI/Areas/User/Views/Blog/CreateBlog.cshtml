@@ -1,0 +1,51 @@
+﻿@model CreateBlogDto
+
+@{
+    ViewData["Title"] = "CreateBlog";
+    Layout = "~/Areas/User/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="card" >
+    <div class="card-body">
+        <h3>Kullanıcıya Ait Bloglar</h3>
+        <form asp-action="CreateBlog">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mt-2">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control text-danger" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <label asp-for="ThumbnailImageUrl" class="control-label"></label>
+                <input asp-for="ThumbnailImageUrl" class="form-control text-danger" />
+                <span asp-validation-for="ThumbnailImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <label asp-for="ViewCount" class="control-label"></label>
+                <input asp-for="ViewCount" class="form-control text-danger" />
+                <span asp-validation-for="ViewCount" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <label asp-for="CoverImageUrl" class="control-label"></label>
+                <input asp-for="CoverImageUrl" class="form-control text-danger" />
+                <span asp-validation-for="CoverImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control text-danger" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <label asp-for="CategoryId" class="control-label"></label>
+                <input asp-for="CategoryId" class="form-control text-danger" />
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group my-4">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+</div>
+
+

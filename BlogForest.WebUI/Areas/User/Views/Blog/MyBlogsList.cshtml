@@ -1,0 +1,44 @@
+﻿@model List<Blog>
+
+@{
+    ViewData["Title"] = "MyBlogsList";
+    Layout = "~/Areas/User/Views/Shared/_UserLayout.cshtml";
+    int count = 0;
+}
+
+
+<div class="card" style="height:90vh;">
+    <div class="card-body">
+        <h3>Kullanıcıya Ait Bloglar</h3>
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Başlık</th>
+                    <th>Kategori</th>
+                    <th>Tarih</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    count++;
+                    <tr>
+                        <td>@count</td>
+                        <td>@item.Title</td>
+                        <td>@item.Category.CategoryName</td>
+                        <td>@item.CreatedDate.ToString("dd MMMM yyyy")</td>
+                        <td>
+                            <a href="/User/Blog/DeleteBlog/@item.BlogId" class="btn btn-danger">Sil</a>
+                            <a href="/User/Blog/UpdateBlog/@item.BlogId" class="btn btn-info">Güncelle</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <a href="/User/Blog/CreateBlog" class="btn btn-info">+ Yeni Blog Oluştur</a>
+    </div>
+
+</div>
