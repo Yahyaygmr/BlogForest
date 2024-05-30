@@ -13,5 +13,6 @@ namespace BlogForest.Businesslayer.Abstract
         Blog GetBlogWithCategoryAndUserById(int id);
         List<Blog> GetLast2BlogByAppUser(int id);
         List<Blog> GetBlogsByAppUser(int id);
+        void IncreaseBlogViewCount(int id);
     }
 }

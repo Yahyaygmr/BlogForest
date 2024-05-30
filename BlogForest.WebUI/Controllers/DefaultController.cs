@@ -19,6 +19,7 @@ namespace BlogForest.WebUI.Controllers
         public IActionResult BlogDetail(int id)
         {
             var values = _blogService.GetById(id);
+            _blogService.IncreaseBlogViewCount(id);
             return View(values);
         }
     }
